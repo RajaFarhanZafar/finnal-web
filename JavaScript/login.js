@@ -302,5 +302,5 @@ function Admin_SignOut() {
 	firebase.auth().signOut();
 	window.alert(" This email : " + email + "is S!gNouT.......@@@@");
 	localStorage.setItem("id", null);
-	window.location.href("login.html");
+	window.location.href="login.html";
 }

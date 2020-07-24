@@ -1,0 +1,68 @@
+.topnav-right {
+    float: right;
+    /*display: none;*/
+  }
+
+  /*image silder Html*/
+  #demo {
+    background: rgba(255,255,255, 0.4);
+    position: absolute;
+    border-style: groove;
+    border-color: rgb(145, 50, 16);
+    width: 700px;
+    margin: auto;
+    border-width: 10px;
+    padding: 10px;
+    /* position: fixed; */
+    align-content: center;
+  }
+  #demo:hover
+  {
+    background: #000000da;
+    cursor: pointer;
+  }
+  .con {
+    
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+
+  #description {
+    background: rgba(255,255,255, 0.4);
+    border-style: groove;
+    border-width: 8px;
+    border-color: rgb(145, 50, 16);
+    margin: auto;
+    position: absolute;
+    left: 750px;
+    width: 400px;
+    padding: 20px;
+  }
+  #description:hover
+  {
+    background: #ffffffce;
+    cursor: pointer;
+  }
+  #caller_detail {
+    background: rgba(255, 255, 255, 0.63);
+    border-style: groove;
+    border-color: rgb(145, 50, 16);
+    border-width: 8px;
+    margin: auto;
+    position: absolute;
+    top: 310px;
+    left: 750px;
+    width: 400px;
+    padding: 40px;
+    text-align: center
+  }
+  #caller_detail:hover
+  {
+    background: #ffffffce;
+    cursor: pointer;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

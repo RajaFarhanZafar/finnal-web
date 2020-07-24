@@ -1,0 +1,135 @@
+
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+  
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+  
+      .con1 {
+        padding-top: 20px;
+        padding-left: 30px;
+      }
+  
+      .con2 {
+        padding-left: 690px;
+        position: absolute;
+      }
+  
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+  
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 100px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+  
+        .cancelbtn {
+          width: 100%;
+        }
+  
+      }
+  
+      .topnav-right {
+        float: right;
+        /*display: none;*/
+      }
+  
+      /*image silder Html*/
+      #car1 {
+        position: absolute;
+        background: rgba(255,255,255, 0.4);
+        border-style: groove;
+        border-color: rgb(145, 50, 16);
+        width: 650px;
+        
+        margin: auto;
+        border-width: 10px;
+        padding: 5px;
+        /* position: fixed; */
+        align-content: center;
+      }
+  
+      #car2 {
+        background: rgba(255,255,255, 0.4);
+        position: absolute;
+        border-style: groove;
+        border-color: rgb(145, 50, 16);
+        width: 650px;
+        margin: auto;
+        border-width: 10px;
+        padding: 5px;
+        /* position: fixed; */
+        align-content: center;
+      }
+      #car1:hover,#car2:hover
+      {
+        background: #000000da;
+        cursor: pointer;
+      }
+  
+      #description {
+        background: rgba(255,255,255, 0.4);
+        border-style: groove;
+        border-width: 8px;
+        border-color: rgb(145, 50, 16);
+        margin: auto;
+        position: absolute;
+        /* left: 750px;   */
+        width: 560px;
+        padding: 10px;
+      }
+      #description:hover
+      {
+        background: #ffffffce;
+        cursor: pointer;
+      }
+      .container1 {
+        padding-left: 120px;
+        padding-top: 540px;
+  
+      }
+  
+      .container2 {
+        padding-left: 690px;
+      }
+  
+      .container3 {
+        padding-top: 180px;
+        padding-left: 690px;
+      }
+  
+      .container4 {
+        padding-left: 280px;
+  
+      }
+  
+      #caller_detail {
+        background: rgba(255,255,255, 0.4);
+        border-style: groove;
+        border-color: rgb(145, 50, 16);
+        border-width: 8px;
+        margin: auto;
+        position: absolute;
+        width: 400px;
+        padding: 10px;
+        text-align: center
+      }
+      #caller_detail:hover
+      {
+        background: #ffffffce;
+        cursor: pointer;
+      }
+  
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }

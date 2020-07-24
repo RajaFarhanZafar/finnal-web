@@ -1,0 +1,130 @@
+
+  /* START --- search bar in homepage ---*/
+  .header
+  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    font-family: sans-serif;
+  }
+ .search-field
+  {
+    height: 30px;
+    padding:10px ;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+  .carname
+  {
+    width: 300px;
+  }
+  .location
+  {
+    width: 200px;
+  }
+  .search-btn
+  {
+    height: 30px;
+    width: 100px;
+    background: #97230e;
+    border: none;
+    color:white;
+    font-weight: bold;
+    border-radius: 25px;
+  }
+  .search-btn:hover
+  {
+    background: #97230e8f;
+    cursor: pointer;
+  }
+  .form-box
+  {
+    background: rgba(255,255,255, 0.4);
+    padding: 15px;
+    border-radius:50px;
+  }
+
+/* END --- search bar in homepage ---*/ 
+
+.topnav-right {
+    float: right;
+    /*display: none;*/
+  }
+  .card{
+      background: rgba(238, 228, 221, 0.76);
+  }
+  .card:hover
+  {
+    background-color:lightgray;
+  }
+  /*check box*/
+  .check
+  {
+    
+    color:aqua;
+    float: right;
+    vertical-align: top;
+    margin-top: 60px;
+    margin-right: 30px;
+  }
+
+  
+button {
+    background-color: #f15d44;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  .bg
+  {
+    padding: 16px;
+    margin: auto;
+   
+  }
+  .logo-image{
+      width: 46px;
+      height: 46px;
+      padding: 1px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color:  #ccc; 
+      margin-bottom:-6px;
+  }
+  .container {
+  
+    padding: 16px;
+    width: 600px;
+    margin: auto;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  

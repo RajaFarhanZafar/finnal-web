@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!------ form tags  ---------->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ form tags  ---------->
+
+  <link rel="stylesheet" href="css/loginpage.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+
+<body
+  style="height: 100vh;background-image: url(images/roadbg.jpg);background-attachment: fixed;background-size:cover;">
+
+  <div class="custom-padding">
+    <nav>
+      <ul class="menu-area">
+
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a id="nav_logBTN" href="login.html">Login</a></li>
+        <li><a id="nav_signupBTN" class="active" href="signup.html" style="color:#4CAF50;">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrapper fadeInDown" id="sign_up_form">
+    <div id="formContent">
+      <h1 class="active" style="font-size: 250%;color: #f15d44;"> Sign Up </h1>
+
+      <div class="fadeIn first">
+      </div>
+        
+        <input type="email" id="email" class="fadeIn second" name="email" placeholder="Email Address">
+        <h1 style="font-weight: bolder;font-size: 8pt;color: red;">* Must fill this field</h1>
+        <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
+        <h1 style="font-weight: bolder;font-size: 8pt;color: red;">* Must fill this field</h1>
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+        <h1 style="font-weight: bolder;font-size: 8pt;color: red;">* Must fill this field</h1>
+        <input type="password" id="Cpassword" class="fadeIn third" name="conformpassword"
+          placeholder="conform Password">
+        <h1 style="font-weight: bolder;font-size: 8pt;color: red;">* Must fill this field</h1>
+        <input type="text" id="phone" class="fadeIn third" name="phone" placeholder="Phone number">
+        <h1 style="font-weight: bolder;font-size: 8pt;color: red;">* Must fill this field</h1>
+        <input type="text" id="cnic" class="fadeIn third" name="CNIC" placeholder="CNIC number">
+        <input type="text" id="gender" class="fadeIn third" name="gender" placeholder="Gender">
+        <input type="text" id="location" class="fadeIn third" name="Address" placeholder="Address">
+
+        <input type="submit" class="fadeIn fourth" value="Sign Up" onclick="signup();">
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+  <script src="JavaScript/login.js"></script>
+  <script src="JavaScript/section.js"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>

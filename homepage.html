@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<style>
+  * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column1 {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        height: 120px;
+        background-color: #aaa;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .column2 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        height: 120px;
+        background: rgba(223, 216, 216, 0.493);
+        /* Should be removed. Only for demonstration */
+    }
+
+    .column3 {
+        float: left;
+        width: 20%;
+        padding: 1px;
+        background: rgba(223, 216, 216, 0.493);
+        height: 120px;
+        /* Should be removed. Only for demonstration */
+    }
+    .column4 {
+        float: left;
+        width: 18%;
+        padding: 15px;
+        background: rgba(223, 216, 216, 0.493);
+        height: 120px;
+        padding-top: 5%;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .row1 {
+        padding-left: 10px;
+        padding-top: 1%;
+    }
+
+    /* Clear floats after the columns */
+
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .column1,
+        .column2,
+        .column3, 
+        .column4 {
+            width: 50%;
+        }
+    }
+    .col-md-8{
+      width: 18%;
+    }
+</style>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="utf-8" />
+  <title>Virtual Car Showroom</title>
+</head>
+
+<body
+  style="height: 100vh;background-image: url(images/roadbg.jpg);background-attachment: fixed;background-size:cover;">
+
+  <div class="custom-padding">
+    <nav>
+      <ul class="menu-area">
+        <li><a class="active" href="homepage.html" style="color:#4CAF50;">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="homepage.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a id="nav_logBTN" href="login.html">Login</a></li>
+        <li><a id="nav_signupBTN" href="signup.html">Sign Up</a></li>
+        <div class="topnav-right">
+          <li>
+            <a id="nav_signoutBTN" style="color:rgb(255, 255, 255);" onclick="SignOut();">Sign out</a>
+          </li>
+        </div>
+        <div class="topnav-right">
+          <li>
+            <a id="nav_userImg" class="navbar-brand" href="/">
+              <div class="logo-image">
+                <img src="images/logo.PNG" class="img-fluid">
+                <span>
+                  <p style="padding-left: 100px;padding-top:20px ;">sdfdadsa</p>
+                </span>
+              </div>
+            </a>
+          </li>
+        </div>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div style="padding: 16px;width: 850px;margin: auto;border: rgb(3, 52, 58);">
+    <form>
+      <div class="form-box">
+        <input id="carname" type="text" style="width: 400px;" class="search-field carname"
+          placeholder="Car Name , Company Name">
+        <input id="location" type="text" style="width: 250px;" class="search-field location" placeholder="Location">
+        <button style="width: 100px;font-weight: bold;
+          border-radius: 50px;" type="button" onclick="searchBtn();">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container" id="check">
+    <div id="check1">
+      <!-- <div class="card " id="-LzrzBk-M7brrytJPekg" style="max-width: 850px;">
+        <div class="row no-gutters">
+          <div class="col-md-3" id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id);"><img
+              src="https://firebasestorage.googleapis.com/v0/b/showroom-21ecb.appspot.com/o/car_image%2F6e371a18-c450-42c4-b363-9050e78042e1.jpeg?alt=media&amp;token=4c0c846b-1d01-4fe1-b821-98fb234e0178"
+              class="card-img">
+            </div>
+          <div class="col-md-5" style="max-width: 250px;" id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id);">
+            <div class="card-body">
+              <h4 class="card-title" id="id-1" style="font-weight: bold;">Honda</h4>
+              <p class="card-text">2019 | petrol | black</p>
+              <p class="card-text" style="color: green; font-weight: bold;">PKR 1700000</p>
+            </div>
+          </div>
+          <div style="max-width: 150px;" class="col-md-4" id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id);">
+            <div class="card-body">
+              <h4 class="card-title" id="id-1" style="font-weight: bold;">Honda</h4>
+              <p class="card-text">2019 | petrol | black</p>
+              <p class="card-text" style="color: green; font-weight: bold;">PKR 1700000</p>
+            </div>
+          </div>
+          <div class="col-md"><input class="check" name="check" type="checkbox" id="-LzrzBk-M7brrytJPekg"
+              onclick="checkbox(this.id);"></div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+  <script src="JavaScript/login.js"></script>
+  <script src="JavaScript/app.js"></script>
+  <script src="JavaScript/section.js"></script>
+</body>
+
+</html>

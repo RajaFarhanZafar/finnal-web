@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <button onclick="google_sign();">Google signIn</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <!-- <script src="JavaScript/login.js"></script> -->
+    <!-- <script src="JavaScript/test.js"></script> -->
+    <script src="JavaScript/google.js"></script>
+    <script >
+        
+     
+    </script>
+
+    <!-- <script>
+       function GoogleLogin() {
+    //first of all create google provider object
+
+    var provider=new firebase.auth.GoogleAuthProvider();
+    //Login with popup window
+    firebase.auth().signInWithPopup(provider).then(function () {
+        //code executes after successful login
+        
+
+        window.location="home.html";
+    }).catch(function (error) {
+        var errorMessage=error.message;
+        alert(errorMessage);
+    });
+}
+    </script> -->
+    <!-- <script>
+    
+    database =firebase.database();
+    var id="3yX87BfhrkXuxvm5v37f0fLBAx82"
+    var str="o";
+    firebase.database().ref('customer').orderByChild("name").startAt(str).endAt(str+"\uf8ff").once('value').then(function (snapshot) {
+        if(snapshot.val())
+        {
+            console.log(snapshot.val());
+        }
+        else
+        {
+            console.log("error ");
+        }
+    });
+// //var ref=database.ref('cardetail').child('name').orderByChild('email').equalTo("fani@gmail.com");
+
+// ref.on('value',gotdata,gotError);
+
+//     function gotdata(data)
+//     { 
+//         console.log(data.val())
+//     }
+//     function gotError(err)
+//     {
+//         console.log(err)
+//     }
+</script> -->
+</body>
+
+</html>

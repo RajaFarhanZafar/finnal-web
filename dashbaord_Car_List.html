@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column1 {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        height: 120px;
+        background-color: #aaa;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .column2 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        height: 120px;
+        background: rgba(223, 216, 216, 0.493);
+        /* Should be removed. Only for demonstration */
+    }
+
+    .column3 {
+        float: left;
+        width: 20%;
+        padding: 1px;
+        background: rgba(223, 216, 216, 0.493);
+        height: 120px;
+        /* Should be removed. Only for demonstration */
+    }
+    .column4 {
+        float: left;
+        width: 18%;
+        padding: 15px;
+        background: rgba(223, 216, 216, 0.493);
+        height: 120px;
+        padding-top: 5%;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .row1 {
+        padding-left: 10px;
+        padding-top: 1%;
+    }
+
+    /* Clear floats after the columns */
+
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .column1,
+        .column2,
+        .column3, 
+        .column4 {
+            width: 50%;
+        }
+    }
+</style>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="css/loginpage.css"> -->
+    <link rel="stylesheet" href="css/dashbaord.css">
+
+
+</head>
+
+<body style="padding-top: 1%;">
+
+    <div class="container">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <img id="Admin_Img" style="display: block; margin-left: auto;margin-right: auto;"
+                    src="images/img_avatar3.png" alt="Avatar" class="avatar">
+                <h4 id="Admin_name" style="text-align: center;">ADmin</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="dashbaord_Home_page.html">Home</a></li>
+                    <li class="active"><a href="dashbaord_Car_List.html">List of Car</a></li>
+                    <li><a href="dashboard_sold_car_details.html">Sold Car List</a></li>
+                    <li><a href="dashbaord_User_List.html">User List</a></li>
+                    <li><a href="dashbaord_Add_User.html">Add User</a></li>
+                    <li><a href="#section4">Edit User Details</a></li>
+                    <li><a onclick="Admin_SignOut();">Sign-Out</a></li>
+
+                </ul><br>
+                
+            </div>
+
+            <div class="col-sm-9">
+                <h1>Car List</h1>
+                <input type="text" id="carname"  name="name" style="width:40%;" placeholder="Car name">
+                <input type="text" id="year"  name="year" style="width:20%;" placeholder="Car model">
+                <input type="submit" class="fadeIn fourth" value="Search" onclick="searchBtn();">
+                <div id="check1">
+                    <div id="check">
+                        <!-- <div class="row1 " id="-LzrzBk-M7brrytJPekg">
+                            <div class="column1 " id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id)">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/showroom-21ecb.appspot.com/o/car_image%2F6e371a18-c450-42c4-b363-9050e78042e1.jpeg?alt=media&amp;token=4c0c846b-1d01-4fe1-b821-98fb234e0178"style="width: 150px; height: 120px;">
+                                </div>
+                            <div class="column2 " id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id);">
+                                <h5>Honda</h5>
+                                <h5>2019 | black</h5>
+                                <h4>1700000</h4>
+                                
+                            </div>
+                            <div class="column3">
+                                <img src="images/sold_out.png"style="width: 150px; height: 120px;">
+
+                            </div>
+                            <div class="column4">
+                                
+                                <button class="edit" id="-LzrzBk-M7brrytJPekg" onclick="myFunction1(this.id);">Edit</button>
+                                <button class="delete" id="-LzrzBk-M7brrytJPekg" onclick="car_delete(this.id);">Delete</button>
+                                <p style="text-align: center;">Views</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <script src="JavaScript/login.js"></script>
+    <script src="JavaScript/admin.js"></script>
+    <script src="JavaScript/A_carlist.js"></script>
+</body>
+
+</html>

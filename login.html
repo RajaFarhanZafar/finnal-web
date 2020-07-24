@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!------ form tags  ---------->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ form tags  ---------->
+
+  <link rel="stylesheet" href="css/loginpage.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<style>
+
+</style>
+
+<body
+  style="height: 100vh;background-image: url(images/roadbg.jpg);background-attachment: fixed;background-size:cover;">
+
+  <style>
+
+  </style>
+  <div class="custom-padding">
+    <nav>
+      <ul class="menu-area">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a id="nav_loginBTN" class="active" href="login.html" style="color:#4CAF50;">Login</a></li>
+        <li><a id="nav_signupBTN" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrapper fadeInDown" id="loginIn_form">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img class=" avatar" src="images/img_avatar3.png" id="icon" alt="User Icon" />
+      </div>
+
+      <h2 class="active" id="Btn_customer" onclick="Customer_Btn_change()" ;> Customer </h2>
+      <h2 class="inactive underlineHover" id="Btn_admin" onclick="Admin_Btn_change();">Admin </h2>
+
+      <!-- Login Form -->
+
+      <input type="email" id="email" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input id="BTN_C_login" type="submit" class="fadeIn fourth" value="Log In" onclick="login();">
+      <input id="BTN_A_login" type="hidden" class="fadeIn fourth" value="Admin Log In" onclick="admin_login();">
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+
+    </div>
+  </div>
+  <div id="verification_form" style="display:none;" class="wrapper1 fadeInDown">
+    <div id="formContent1" style="color: white;">
+
+      <h1 style="color: red;font-weight: bolder;">Note</h1>
+      <p id="Verification_note" style="color: white;font-weight: bold;">Dear Customer Plz verify your Account first <br>And then login to your account</h2>
+     
+      <input id="Verification_BTN" type="submit" class="fadeIn fourth" value="Verification" onclick="VerifyBtn(this.id);">
+
+    </div>
+  </div>
+
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+  <script src="JavaScript/login.js"></script>
+  <script src="JavaScript/section.js"></script>
+
+</body>
+
+</html>
